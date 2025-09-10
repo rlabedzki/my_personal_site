@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+
+# Wirtualne środowisko
+.venv/
+env/
+
+# VSCode / edytory
+.vscode/
+.idea/
+
+# Systemowe
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+*.pid
