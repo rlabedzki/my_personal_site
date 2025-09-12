@@ -1,4 +1,4 @@
-name: Deploy website
+name: Deploy Website
 
 on:
   push:
@@ -10,22 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up SSH
+      - name: Set up SSH key
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
+          echo "${{ secrets.SERVER_SSH_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
 
       - name: Deploy to server
         run: |
-          ssh -i ~/.ssh/id_ed25519 ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} << 'EOF'
-            cd ~/my_personal_site || git clone git@github.com:rlabedzki/my_personal_site.git ~/my_personal_site
-            cd ~/my_personal_site
-            git reset --hard
-            git pull origin main
-            docker compose up -d --build
-          EOF
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} << 'EOF'
