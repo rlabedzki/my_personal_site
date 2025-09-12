@@ -23,8 +23,10 @@ jobs:
       - name: Deploy to server
         run: |
           ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} << 'EOF'
-
-      - name: Build and run Docker
-        run: |
-          cd my_personal_site
-          docker compose up -d --build
+            cd ~/my_personal_site || git clone git@github.com:rlabedzki/my_personal_site.git ~/my_personal_site
+            cd ~/my_personal_site
+            git reset --hard
+            git pull origin main
+            cd website
+            docker compose up -d --build
+          EOF
