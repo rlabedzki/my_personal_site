@@ -27,6 +27,7 @@ jobs:
 
       - name: Run Playwright tests
         run: |
+          source venv/bin/activate
           pytest tests_e2e/
 
       - name: Set up SSH key
