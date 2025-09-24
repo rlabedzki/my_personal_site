@@ -45,7 +45,7 @@
       <img src="..\static\images\avatar.png" alt="" class="img-fluid rounded-circle">
     </div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+    <a href="#hero" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="../static/assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Rafał Łabędzki</h1>
@@ -59,7 +59,8 @@
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <!--<li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>-->
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#projects"><i class="bi bi-robot navicon"></i> Projects</a></li>
       </ul>
     </nav>
@@ -75,84 +76,208 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Rafał Łabędzki</h2>
-        <p>I'm <span class="typed" data-typed-items="MLOps, Scrum Master">MLOps</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed" data-typed-items="MLOps, DevOps, Test Automation Engineer, Scrum Master">MLOps</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
 
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About me</h2>
+        <p>
+          I am a seasoned IT professional with over 10 years of experience, working across diverse projects 
+          in both Polish and international teams. My career spans roles in <strong>test automation</strong>, 
+          <strong>DevOps</strong>, and <strong>experience as a Scrum Master</strong>, giving me a strong foundation 
+          in delivering reliable software and managing complex workflows. I have led projects, coordinated 
+          cross-functional teams, and implemented processes that improve efficiency and collaboration.
+        </p>
+        <br/>
+        <p>
+          Currently, I am focusing on <strong>MLOps</strong>, where I combine my automation and infrastructure 
+          experience with machine learning. I work on preparing and processing data, training models, and 
+          maintaining reliable pipelines to deploy and monitor them. I enjoy tackling challenges at the 
+          intersection of <strong>technology</strong>, <strong>data</strong>, and <strong>process</strong>, 
+          creating solutions that are practical, robust, and forward-looking.
+        </p>
+      </div><!-- End Section Title -->
+
+    </section><!-- /About Section -->
+
     <!-- Resume Section -->
-    <!-- <section id="resume" class="resume section">
+    <section id="resume" class="resume section light-background">
 
-      Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" style="padding-bottom: 10px;">
          <h2>Resume</h2>
-         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div> End Section Title -->
+      </div> <!-- End Section Title -->
 
-      <!-- <div class="container">
+      <div class="container">
 
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+            <h3 class="resume-title">Skills</h3>
 
             <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <h4>MLOps & DevOps</h4>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li>Data preprocessing and feature engineering</li>
+                <li>Model training and evaluation</li>
+                <li>Model serialization</li>
+                <li>Exposing ML model via REST API</li>
+                <li>Containerizing service with Docker</li>
+                <li>CI/CD with GitLab/Github</li>
+                <li>Linux (system administration, shell scripting)</li>
+                <li>Ansible (basic IaC, automation playbooks)</li>
+                <li>Kubernetes (K3s basics)</li>
               </ul>
-            </div>Edn Resume Item -->
+            </div><!--Edn Resume Item -->
 
-            <!-- <h3 class="resume-title">Education</h3>
+            <div class="resume-item pb-0">
+              <h4>Test Automation & QA</h4>
+              <ul>
+                <li>Playwright, Cypress</li>
+                <li>API Testing</li>
+                <li>Test strategy design</li>
+              </ul>
+            </div><!--Edn Resume Item -->
+
+            <div class="resume-item pb-0">
+              <h4>Languages & Development</h4>
+              <ul>
+                <li>Python</li>
+                <li>JavaScript / Node.js</li>
+                <li>YAML / JSON</li>
+              </ul>
+            </div><!--Edn Resume Item -->
+
+            <div class="resume-item pb-0">
+              <h4>Other</h4>
+              <ul>
+                <li>Agile (Scrum)</li>
+                <li>Mentoring</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Trainings & Certifications</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div>Edn Resume Item -->
+              <ul>
+                <li>Data science Training - Kaggle (in progress)</li>
+                <li>MLOps Training - CGI Internal (in progress)</li>
+                <li>100 Days of Code - Python Pro Bootcamp - Udemy (in progress)</li>
+                <li>DevOps Beginners to Advanced with Projects - Udemy</li>
+                <li>GitLab CI/CD & DevOps Hands-On - Udemy</li>
+                <li>Playwright JS/TS & Cypress Automation - Udemy</li>
+                <li>Core DevOps Skills - CGI Internal</li>
+                <li>Scrum Master Training - CGI Internal</li>
+                <li>Security in Testing / OSINT - Niebezpiecznik.pl</li>
+              </ul>
+            </div><!-- End Resume Item -->
 
-            <!-- <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div> Edn Resume Item -->
 
-          <!-- </div>
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor's Degree, Business Informatics</h4>
+              <h5>2014 - 2017</h5>
+              <p><em>Wrocław University of Economics and Business</em></p>
+              <p>Focus: Database technologies and mobile applications</p>
+            </div><!-- End Resume Item -->
+
+           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div> Edn Resume Item -->
+              <h4>CGI</h4>
+              <h5>Senior IT Consultant</h5>
+              <p style="padding-left: 30px;"><em>Jan 2025 - Present</em></p>
+              <h5>IT Consultant</h5>
+              <p style="padding-left: 30px;"><em>Oct 2016 - Dec 2024</em></p>
+            </div> <!--Edn Resume Item -->
 
-            <!-- <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+             <div class="resume-item">
+              <h4>Key Projects & Achievements:</h4>
+
+              <h5>Senior Tester - legacy insurance system & Test Automation Mentor</h5>
+              <p style="padding-left: 30px;"><em>Jun 2025 - Currently</em></p>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                <li>Performing deep manual testing of complex cases in legacy insurance systems</li>
+                <li>Mentoring other project team with automation testing for CRM implementation</li>
               </ul>
-            </div> Edn Resume Item -->
-          <!-- </div>
+
+              <h5>Scrum Master for Multi-Team Collaboration</h5>
+              <p style="padding-left: 30px;"><em>Dec 2024 - May 2025</em></p>
+              <ul>
+                <li>Supported several agile teams delivering on parallel projects for the same enterprise client</li>
+                <li>Improved cross-team coordination, backlog alignment, and agile maturity</li>
+                <li>Acted as a mentor for team members and Product Owner</li>
+              </ul>
+
+              <h5>DevOps Consultant - CI/CD Modernization</h5>
+              <p style="padding-left: 30px;"><em>Sep 2024 - Nov 2024</em></p>
+              <ul>
+                <li>Advised client teams on updating and streamlining legacy CI/CD pipelines</li>
+                <li>Proposed actionable improvements to workflows and deployment automation</li>
+                <li>Facilitated knowledge transfer and implementation planning for long-term sustainability</li>
+              </ul>
+
+              <h5>Scrum Master & Test Lead - Feature Integration Project</h5>
+              <p style="padding-left: 30px;"><em>Jun 2024 - Aug 2024</em></p>
+              <ul>
+                <li>Led testing and coordination for a feature added to a live system maintained by multiple other teams</li>
+                <li>Balanced Scrum Master responsibilities with test planning and execution oversight</li>
+                <li>Ensured smooth integration by introducing clear quality gates and communication paths</li>
+              </ul>
+
+              <h5>End-to-End QA Automation & Agile Leadership</h5>
+              <p style="padding-left: 30px;"><em>Sep 2023 - Jun 2024</em></p>
+              <ul>
+                <li>Led a greenfield automation initiative as both Test Automation Lead and Scrum Master</li>
+                <li>Recruited and trained junior QA engineers, setting up the team and onboarding from scratch</li>
+                <li>Selected and tailored tools (Cypress, Postman, GitLab CI) to client needs and constraints</li>
+                <li>Supported the client in agile transformation and QA strategy</li>
+                <li>Delivered a complete framework with robust test coverage on time and beyond scope, earning exceptional client feedback</li>
+              </ul>
+
+              <h5>BDD Implementation & Test Automation Strategy</h5>
+              <p style="padding-left: 30px;"><em>Mar 2022 - Jul 2023</em></p>
+              <ul>
+                <li>Introduced and championed Behavior-Driven Development (BDD) across QA and development</li>
+                <li>Developed UI and API test automation frameworks from the ground up</li>
+                <li>Acted as technical leader and communication bridge between QA and developers</li>
+              </ul>
+
+              <h5>Data Warehouse Rebuild - Test Leadership</h5>
+              <p style="padding-left: 30px;"><em>Mar 2022 - Jul 2023</em></p>
+              <ul>
+                <li>Provided automation and test leadership for a critical data migration and warehouse rebuild</li>
+                <li>Ensured data validation, transformation testing, and API validation with automation</li>
+              </ul>
+
+              <h5>Test Automation for Insurance Platform</h5>
+              <p style="padding-left: 30px;"><em>Sep 2020 - Aug 2021</em></p>
+              <ul>
+                <li>Built automation from scratch for a greenfield application using Node.js-based tools</li>
+                <li>Integrated tests into early-stage CI processes, contributing to development stability</li>
+              </ul>
+
+              <h5>Manual & Exploratory Testing</h5>
+              <p style="padding-left: 30px;"><em>2016 - 2020</em></p>
+              <ul>
+                <li>Performed deep manual testing of complex cases in insurance systems</li>
+                <li>Actively contributed to quality improvement and process documentation</li>
+                <li>Supported production systems and regression cycles for legacy platforms</li>
+              </ul>
+
+            </div> <!--Edn Resume Item -->
+           </div>
         </div>
       </div>
 
-    </section> /Resume Section -->
+    </section> <!--/Resume Section -->
 
     <!-- Projects Section -->
     <section id="projects" class="projects section">
@@ -160,7 +285,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Projects</h2>
-        <p>My projects</p>
+        <p>This section showcases a selection of my practical work, highlighting projects where I applied my skills in software development, test automation, DevOps, and MLOps. 
+          Each project demonstrates not only the use of specific technologies but also my focus on building reliable, automated, and production-ready solutions.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -171,10 +297,50 @@
             <div class="icon flex-shrink-0"><i class="bi bi-water"></i></div>
             <div>
               <h4 class="title"><a href="#" class="stretched-link">Titanic</a></h4>
-              <p class="description">My current project, will be added soon.</p>
+              <p class="description">
+                WIP 
+                <br>
+                A machine learning project based on the Titanic dataset, developed as a microservice with an exposed REST API. 
+                The workflow includes data preprocessing, feature engineering, and training a classification model to predict passenger survival. 
+                The trained model is exported and integrated into a FastAPI application, which serves predictions via API endpoints. 
+                The service is fully containerized with Docker, and a GitHub CI/CD pipeline ensures automated building, testing, and deployment. 
+                This project demonstrates the application of MLOps practices in packaging, delivering, and maintaining machine learning models as production-ready services.</p>
             </div>
           </div>
           <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-laptop"></i></div>
+            <div>
+              <h4 class="title"><a href="#" class="stretched-link">My portfolio page</a></h4>
+              <p class="description">A web application built with Python to showcase my professional experience and projects. 
+                The site is fully containerized with Docker and follows a CI/CD approach using GitHub pipelines for automated building, testing, and deployment. 
+                End-to-end tests were implemented with Playwright to ensure reliability and smooth user interaction. 
+                The project reflects my focus on clean design, automation, and applying modern DevOps practices to web development.
+                The frontend is a modified version of the 'iPortfolio' design.
+              </p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-code"></i></div>
+            <div>
+              <h4 class="title"><a href="https://gitlab.com/rlabedzki/ansible" class="stretched-link">Private Multimedia Server</a></h4>
+              <p class="description">Designed and deployed a self-hosted media server on a repurposed laptop running Ubuntu Server. The goal was to
+                explore real-world DevOps workflows and improve my understanding of infrastructure automation</p>
+              <h5>Highlights</h5>
+                <ul>
+                <li>Used Ansible for automating setup and configuration of services</li>
+                <li>Deployed media applications in containers using Docker</li>
+                <li>Created custom, minimal Helm charts for application deployment</li>
+                <li>Applied basic Kubernetes (K3s) practices to manage services in test and production namespace</li>
+                <li>Integrated Prometheus and Grafana for basic monitoring</li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
         </div>
       </div>
     </section><!-- /Services Section -->

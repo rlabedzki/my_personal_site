@@ -621,7 +621,7 @@ section,
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: var(--background-color);
+  background: var(--accent-color);
   border: 2px solid var(--accent-color);
 }
 
