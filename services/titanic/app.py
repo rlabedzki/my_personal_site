@@ -9,7 +9,8 @@ import data_formater
 app = FastAPI(
     title="Titanic Model API",
     description="API for predicting survival of Titanic passengers.",
-    version="1.0.0"
+    version="1.0.0",
+    root_path="/titanic"
 )
 
 # wczytaj model

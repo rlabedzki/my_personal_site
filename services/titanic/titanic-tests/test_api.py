@@ -1,7 +1,7 @@
 import pytest
 import httpx
 
-BASE_URL = "http://127.0.0.1:8000"  # kontener Titanic w docker-compose
+BASE_URL = "http://127.0.0.1/titanic"  # kontener Titanic w docker-compose
 
 # Testy poprawnych danych
 @pytest.mark.parametrize(

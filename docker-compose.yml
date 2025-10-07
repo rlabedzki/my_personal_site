@@ -1,13 +1,23 @@
-version: "3.9"
 services:
   website:
     build: ./services/website
     ports:
-      - "80:5000"
-    depends_on:
-      - titanic
+      - "5000"  # port wewnętrzny kontenera
+    restart: always
 
   titanic:
     build: ./services/titanic
     ports:
-      - "8000:8000"
+      - "8000"  # port wewnętrzny kontenera
+    restart: always
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"   # zmapowany na hosta
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - website
+      - titanic
+    restart: always
