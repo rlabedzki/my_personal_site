@@ -4,3 +4,10 @@ services:
     build: ./services/website
     ports:
       - "80:5000"
+    depends_on:
+      - titanic
+
+  titanic:
+    build: ./services/titanic
+    ports:
+      - "8000:8000"

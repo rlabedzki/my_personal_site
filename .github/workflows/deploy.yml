@@ -23,13 +23,21 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          # API test dependencies
+          pip install -r titanic/titanic-tests/requirements.txt
+          # Playwright dependencies
+          pip install -r tests_e2e/requirements.txt
           python -m playwright install --with-deps
 
       - name: Build and start Docker containers
         run: |
           docker compose up -d --build
           sleep 5
+
+      - name: Run API tests
+        run: |
+          source venv/bin/activate
+          pytest services/titanic/titanic-tests/test_api.py -v
 
       - name: Run Playwright tests
         run: |
